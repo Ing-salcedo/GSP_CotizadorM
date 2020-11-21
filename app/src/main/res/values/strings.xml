@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GSP_CotizadorM</string>
+    <string name="titulo_comprar">NUEVA COMPRA</string>
+    <string name="cantidad_producto">Ingrese la cantidad de manillas a comprar</string>
+    <string name="material">Seleccione el material que desea para su manilla</string>
+    <string name="dije">Seleccione el dije de su preferencia</string>
+    <string name="moneda">Seleccione el tipo de moneda</string>
+    <string name="cotizar">COTIZAR</string>
+    <string name="limpiar">LIMPIAR</string>
 </resources>

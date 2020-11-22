@@ -20,6 +20,7 @@
         android:id="@+id/txtCantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
         android:ems="10"
         android:hint="@string/cantidad_producto"
         android:inputType="number" />
@@ -28,6 +29,7 @@
         android:id="@+id/lblMaterial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
         android:text="@string/material"
         android:textSize="14sp" />
 
@@ -40,6 +42,7 @@
         android:id="@+id/lblDije"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
         android:text="@string/dije"
         android:textSize="14sp" />
 
@@ -52,17 +55,19 @@
         android:id="@+id/lblMoneda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
         android:text="@string/moneda"
         android:textSize="14sp" />
 
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/cmbMoneda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
         android:orientation="horizontal">
 
         <Button
@@ -83,5 +88,6 @@
     <TextView
         android:id="@+id/lblResultado"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp" />
 </LinearLayout>

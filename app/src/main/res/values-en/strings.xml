@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GSP_CotizadorM</string>
+    <string name="titulo_comprar">PURCHASE ORDER</string>
+    <string name="cantidad_producto">Enter the number of handles to buy</string>
+    <string name="material">Select the material you want for your handle</string>
+    <string name="dije">Select the charm of your preference</string>
+    <string name="moneda">Select the type of currency</string>
+    <string name="cotizar">QUOTE</string>
+    <string name="limpiar">CLEAR</string>
+</resources>

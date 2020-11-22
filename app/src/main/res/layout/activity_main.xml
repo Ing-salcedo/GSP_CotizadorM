@@ -52,6 +52,18 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/lblTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:text="@string/tipo" />
+
+    <Spinner
+        android:id="@+id/cmbTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
         android:id="@+id/lblMoneda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,20 +86,29 @@
             android:id="@+id/btnCotizar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3sp"
             android:layout_weight="1"
+            android:onClick="calcularcosto"
             android:text="@string/cotizar" />
 
         <Button
             android:id="@+id/btnLimpiar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3sp"
             android:layout_weight="1"
+            android:onClick="limpiar"
             android:text="@string/limpiar" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/lblResultado"
+        android:id="@+id/lblCosto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8sp" />
+        android:layout_marginTop="8sp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </LinearLayout>

@@ -4,8 +4,21 @@
     <string name="titulo_comprar">PURCHASE ORDER</string>
     <string name="cantidad_producto">Enter the number of handles to buy</string>
     <string name="material">Select the material you want for your handle</string>
-    <string name="dije">Select the charm of your preference</string>
+    <string name="dije">Select the pendant of your preference</string>
     <string name="moneda">Select the type of currency</string>
     <string name="cotizar">QUOTE</string>
     <string name="limpiar">CLEAR</string>
+    <string name="encabezado_costo">The cost of the order is:</string>
+    <string name="mensaje_error_cantidad">Enter the number of handles</string>
+    <string name="cuero">Leather</string>
+    <string name="cuerda">Rope</string>
+    <string name="martillo">Hammer</string>
+    <string name="ancla">Anchor</string>
+    <string name="oro">Gold</string>
+    <string name="oro_rosado">Pink gold</string>
+    <string name="plata">Silver</string>
+    <string name="niquel">Nickel</string>
+    <string name="dolar">Dollar</string>
+    <string name="peso">Peso</string>
+    <string name="tipo">Select the type of material for your pendant</string>
 </resources>

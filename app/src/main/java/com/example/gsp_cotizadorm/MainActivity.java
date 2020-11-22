@@ -2,8 +2,10 @@ package com.example.gsp_cotizadorm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -44,10 +46,81 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calcularcosto(View v){
-        int cant, costototal;
+        int cant, costototal=0, monetransaccion=0, poscmbmat, poscmbdije, poscmbtipo, poscmbmone;
+        InputMethodManager imm;
+        imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(cantidad.getWindowToken(),0);
+
         if (validar()) {
             cant = Integer.parseInt(cantidad.getText().toString());
-            costototal = cant;
+            poscmbmone = combomonedas.getSelectedItemPosition();
+            poscmbmat = combomateriales.getSelectedItemPosition();
+            poscmbdije = combodijes.getSelectedItemPosition();
+            poscmbtipo = combotipos.getSelectedItemPosition();
+            switch (poscmbmone){
+                case 0:
+                    monetransaccion = 1;
+                    break;
+                case 1:
+                    monetransaccion = 3200;
+                    break;
+            }
+            if (poscmbmat == 0 && poscmbdije == 0){
+                switch (poscmbtipo){
+                    case 0:
+                    case 1:
+                        costototal = cant * 100 * monetransaccion;
+                        break;
+                    case 2:
+                        costototal = cant * 80 * monetransaccion;
+                        break;
+                    case 3:
+                        costototal = cant * 70 * monetransaccion;
+                        break;
+                }
+            }
+            if (poscmbmat == 0 && poscmbdije == 1){
+                switch (poscmbtipo){
+                    case 0:
+                    case 1:
+                        costototal = cant * 120 * monetransaccion;
+                        break;
+                    case 2:
+                        costototal = cant * 100 * monetransaccion;
+                        break;
+                    case 3:
+                        costototal = cant * 90 * monetransaccion;
+                        break;
+                }
+            }
+            if (poscmbmat == 1 && poscmbdije == 0){
+                switch (poscmbtipo){
+                    case 0:
+                    case 1:
+                        costototal = cant * 90 * monetransaccion;
+                        break;
+                    case 2:
+                        costototal = cant * 70 * monetransaccion;
+                        break;
+                    case 3:
+                        costototal = cant * 50 * monetransaccion;
+                        break;
+                }
+            }
+            if (poscmbmat == 1 && poscmbdije == 1){
+                switch (poscmbtipo){
+                    case 0:
+                    case 1:
+                        costototal = cant * 110 * monetransaccion;
+                        break;
+                    case 2:
+                        costototal = cant * 90 * monetransaccion;
+                        break;
+                    case 3:
+                        costototal = cant * 80 * monetransaccion;
+                        break;
+                }
+            }
             costo.setText(getString(R.string.encabezado_costo) + costototal);
         }
     }
@@ -65,5 +138,7 @@ public class MainActivity extends AppCompatActivity {
         cantidad.setText("");
         costo.setText("");
         cantidad.requestFocus();
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
     }
 }

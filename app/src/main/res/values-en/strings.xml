@@ -8,7 +8,7 @@
     <string name="moneda">Select the type of currency</string>
     <string name="cotizar">QUOTE</string>
     <string name="limpiar">CLEAR</string>
-    <string name="encabezado_costo">The cost of the order is:</string>
+    <string name="encabezado_costo">The cost of the order is: $</string>
     <string name="mensaje_error_cantidad">Enter the number of handles</string>
     <string name="cuero">Leather</string>
     <string name="cuerda">Rope</string>

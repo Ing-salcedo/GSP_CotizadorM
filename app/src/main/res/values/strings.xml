@@ -7,7 +7,7 @@
     <string name="moneda">Seleccione el tipo de moneda</string>
     <string name="cotizar">COTIZAR</string>
     <string name="limpiar">LIMPIAR</string>
-    <string name="encabezado_costo">\"El costo de la orden es: \"</string>
+    <string name="encabezado_costo">El costo de la orden es: $</string>
     <string name="mensaje_error_cantidad">Digite la cantidad de manillas</string>
     <string name="cuero">Cuero</string>
     <string name="cuerda">Cuerda</string>
